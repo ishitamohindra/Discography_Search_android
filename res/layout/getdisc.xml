@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20sp" >
+	
+    <LinearLayout
+        android:weightSum="100"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10sp"
+          >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:text="Search:"
+        android:layout_weight="70"
+        
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:layout_weight="30"
+        android:hint="Enter your string"
+		>
+        <requestFocus />
+    </EditText>
+	</LinearLayout>
+	
+<LinearLayout 
+    android:weightSum="100"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:padding="10sp"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCat"
+        android:text="Type:"
+        android:layout_weight="70"
+        
+        />
+    
+    <Spinner
+        android:id="@+id/spCat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:prompt="@string/prompt"
+        android:entries="@array/category"
+         />
+    
+</LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Submit"
+       />
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:id = "@+id/tvhttp"/>
+</LinearLayout>

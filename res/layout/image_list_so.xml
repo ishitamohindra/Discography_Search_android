@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+      <ImageView
+        android:id="@+id/ivSample"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/headphone" />
+
+      <TextView
+          android:id="@+id/tvTitleSong"
+          android:layout_width="80sp"
+          android:layout_height="wrap_content"
+          android:padding="5sp"
+          android:text="hi" />
+
+    <TextView
+        android:id="@+id/tvPerformer"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+         android:text="hi"
+         />
+
+    <TextView
+        android:id="@+id/tvComposer"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+         android:text="hi"
+         />
+
+</LinearLayout>
